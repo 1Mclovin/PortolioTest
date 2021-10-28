@@ -1,0 +1,94 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding:30px;
+}
+.section{
+    margin-bottom: 8rem;
+}
+
+$horizon: #6180B0;
+$hitGray: #A1ACB6;
+
+.main-background{
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($horizon, 0.4),
+        rgba($hitGray, 0.4)),
+        url(..//img/cactusHill.jpeg);
+        background-size: cover ;
+    
+}
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading-primary{
+    color: whitesmoke;
+    text-transform: uppercase;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+
+}
+.heading-primary--main{
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 25px; 
+}
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*
+horizon
+#6180B0
+
+Hit Gray
+#A1ACB6
+
+Cold Turkey
+#CEBEBC
+
+Fiord
+#455168
+*/
+
+
+
+//----------------about------------
+
+
+
+
+//-----------------experience---------------
+
+
+
+//------------------contact-----------------------
+.contact-text{
+    text-align: center;
+    color: beige;
+}
+.footer{
+    padding: 1px;
+    background-color: $hitGray;
+}

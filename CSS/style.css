@@ -1,0 +1,185 @@
+html {
+  scroll-behavior: smooth; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  padding: 30px; }
+
+.section {
+  margin-bottom: 8rem; }
+
+.main-background {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(97, 128, 176, 0.4), rgba(161, 172, 182, 0.4)), url(..//img/cactusHill.jpeg);
+  background-size: cover; }
+  
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary {
+  color: whitesmoke;
+  text-transform: uppercase;
+  animation-name: moveInLeft;
+  animation-duration: 4s; }
+
+.heading-primary--main {
+  display: block;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 25px; }
+  .secret-icon{
+      animation: wiggle 200ms 3s 8 alternate ease;
+  }
+
+  @keyframes moveInLeft {
+	/* X is for left to right, Y top to bottom */
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	/* Makes it look like current state */
+	100% {
+		opacity: 1;
+		transform: translate(0);
+
+	}
+}
+
+@keyframes wiggle {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(10deg) scale(1.5);
+	}
+}
+
+/*
+horizon
+#6180B0
+
+Hit Gray
+#A1ACB6
+
+Cold Turkey
+#CEBEBC
+
+Fiord
+#455168
+*/
+.contact-text {
+  text-align: center;
+  color: beige; }
+
+.footer {
+  padding: 1px;
+  background-color: #A1ACB6; }
+
+  .about-jumbo{
+      background-color: lightslategray;
+    
+  }
+
+  .about-text{
+      height: 75vh;
+      text-align: center;
+      color: black;
+  }
+  .feature-box{
+      margin-top: 3rem;
+      transition: transform .3s;
+
+  }
+
+  .feature-box:hover{
+      transform: translateY(-1.5rem)scale(1.03);
+  }
+  .experience-jumbo{
+      background-color: lightblue;
+      height: 75vh;
+  }
+  .experience-header{
+      color: aquamarine;
+      text-align: center;
+  }
+  .ecard{
+      perspective: 150rem;
+      position: relative;
+      height: 30rem;
+
+  }
+
+  .ecard__side{
+      text-align: center;
+      color: antiquewhite;
+      height: 30rem;
+      transition:all .8s ease;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      backface-visibility: hidden;
+      overflow: hidden;
+  }
+
+  .ecard__side--front{
+      background-color: bisque;
+  }
+
+  .ecard__side--back{
+      background-image: linear-gradient(to right bottom, #CDC9C1, #FAD02C);
+      transform: rotateY(180deg);
+    
+  }
+
+  .ecard:hover .ecard__side--front{
+      transform: rotateY(-180deg);
+
+  }
+
+  .ecard:hover .ecard__side--back{
+      transform: rotateY(0);
+}
+
+.ecard__picture{
+    background-size: cover;
+    height: 13rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.ecard__picture--1{
+    background-image: linear-gradient(to right bottom, rgba(97, 128, 176, 0.4), rgba(161, 172, 182, 0.4)), url(../img/kakashiXitachi.jpeg);
+}
+
+.ecard__picture--2{
+    background-image: linear-gradient(to right bottom, rgba(97, 128, 176, 0.4), rgba(161, 172, 182, 0.4)), url(..//img/thumbnail_IMG-1637.jpg);
+}
+
+.ecard__picture--3{
+    background-image: linear-gradient(to right bottom, rgba(97, 128, 176, 0.4), rgba(161, 172, 182, 0.4)), url(..//img/verizonPic2.jpeg);
+}
+
+.ecard__details{
+    color: black;
+    margin-top: 2rem;
+}
+
+.ecard__cta{
+    position: absolute;
+    color: black;
+    margin-top: 2rem;
+    padding: 0 1rem 0 1rem;
+    font-weight: 20;
+    font-size: 1.3rem;
+}
